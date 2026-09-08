@@ -11,9 +11,9 @@ theme:
     - content.code.copy
     - content.tabs.link
   palette:
-    scheme: slate
-    primary: red
-    accent: orange
+    scheme: default
+    primary: indigo
+    accent: light blue
 markdown_extensions:
   - attr_list
   - pymdownx.arithmatex:
@@ -25,11 +25,13 @@ extra_javascript:
 
 nav:
     - Início: index.md
-    - Requisitos: requirements.md
-    - Histórias de usuário: us_stories.md
-    - Planejamento MVP: mvp.md
-    - Protótipo: prototipo.md
-    - Modelagem Banco: banco.md
-    - Backlog do Produto: backlog.md
-    - Atividades da Sprint: atividades_sprint.md
-    - Registro de Reuniões: registro_reunioes_sprint.md
+    - Gestão e Evolução (Atual):
+        - Backlog do Produto: backlog.md
+        - Atividades da Sprint: atividades_sprint.md
+        - Registro de Reuniões: registro_reunioes_sprint.md
+        - Protótipo Mobile: prototipo.md
+    - Legado (Disciplina Passada):
+        - Requisitos Iniciais: requirements.md
+        - Histórias de Usuário Base: us_stories.md
+        - Planejamento MVP: mvp.md
+        - Modelagem do Banco: banco.md
