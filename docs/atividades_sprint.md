@@ -64,20 +64,20 @@ Este documento consolida o andamento tecnico da equipe ao longo do projeto, deta
 - **Issues:** #2
 
 ### SEC-02: Atualizar dependencias vulneraveis
-- **Frente:** Seguranca
+- **Frente:** Segurança
 - **Trio / Responsaveis:** Paola, Lara e Magno
 - **Descricao:** Atualizacao de bibliotecas vulneraveis do backend (como fastify e fastify-jwt) para mitigar falhas de seguranca.
 - **Status:** Finalizado
 - **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/6)
 - **Issues:** #3
 
-### CI-03: Ajustes de CI/CD do aplicativo mobile
-- **Frente:** CI/CD
+### SEC-03: Migrar armazenamento de sessão.
+- **Frente:** Segurança
 - **Trio / Responsaveis:** Paola, Lara e Magno
-- **Descricao:** Criação dos pipelines de integracao e entrega (CI/CD) focados na esteira do aplicativo mobile.
-- **Status:** Finalizado
-- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
-- **Issues:** #23
+- **Descricao:** Migrar armazenamento de sessao do localStorage para Cookies HttpOnly com protecao CSRF.
+- **Status:** Em revisão.
+- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/6)
+- **Issues:** #4
 
 ---
 
