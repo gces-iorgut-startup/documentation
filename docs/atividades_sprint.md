@@ -9,7 +9,7 @@ Este documento consolida o andamento técnico da equipe ao longo do projeto, det
 
 ### MOB-01: Setup inicial React Native
 - **Frente:** Mobile (Infraestrutura)
-- **Trio / Responsáveis:** _A definir_
+- **Trio / Responsáveis:** [Taynara Vitorino](https://github.com/taybalau), [Luiza Pugas](https://github.com/Luizaxx) e [João Marcos](https://github.com/JJOAOMARCOSS)
 - **Descrição:** Configuração da arquitetura base do aplicativo e do ecossistema inicial em React Native.
 - **Status:** Em Andamento
 - **Issue:** [#16](https://github.com/gces-iorgut-startup/android-mobile/issues/16) · [Quadro do Projeto](https://github.com/orgs/gces-iorgut-startup/projects/5)
@@ -61,12 +61,12 @@ Este documento consolida o andamento técnico da equipe ao longo do projeto, det
 
 ---
 
-### SEC-03: Migrar armazenamento de sessao do localStorage para Cookies HttpOnly com protecao CSRF
-- **Frente:** Seguranca
-- **Trio / Responsaveis:** Paola, Lara e Magno
-- **Descricao:** Migracao da arquitetura de autenticacao do sistema, removendo a persistencia de tokens do localStorage no frontend (mitigando ataques XSS) e implementando o envio de credenciais via Cookies HttpOnly, aliados a uma camada de protecao com tokens Anti-CSRF no backend (Fastify) e Axios.
-- **Status:** Em andamento
-- **Kanban:** [#4](https://github.com/gces-iorgut-startup/backend/issues/4)
+### SEC-03: Migrar armazenamento de sessão do localStorage para Cookies HttpOnly com proteção CSRF
+- **Frente:** Segurança
+- **Trio / Responsáveis:** Paola, Lara e Magno
+- **Descrição:** Migração da arquitetura de autenticação do sistema, removendo a persistência de tokens do localStorage no frontend (mitigando ataques XSS) e implementando o envio de credenciais via Cookies HttpOnly, aliados a uma camada de proteção com tokens Anti-CSRF no backend (Fastify) e Axios.
+- **Status:** Em Andamento
+- **Issue:** [#4](https://github.com/gces-iorgut-startup/backend/issues/4)
 
 ---
 
