@@ -25,12 +25,12 @@ extra_javascript:
 
 nav:
     - Início: index.md
-    - Gestão e Evolução (Atual):
+    - Gestão e Evolução:
         - Backlog do Produto: backlog.md
         - Atividades da Sprint: atividades_sprint.md
         - Registro de Reuniões: registro_reunioes_sprint.md
         - Protótipo Mobile: prototipo.md
-    - Legado (Disciplina Passada):
+    - Base Herdada:
         - Requisitos Iniciais: requirements.md
         - Histórias de Usuário Base: us_stories.md
         - Planejamento MVP: mvp.md
