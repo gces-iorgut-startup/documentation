@@ -47,7 +47,7 @@ Este documento consolida o andamento técnico da equipe ao longo do projeto, det
 - **Frente:** Segurança
 - **Trio / Responsáveis:** Paola, Lara e Magno
 - **Descrição:** Resolução de questões de segurança críticas apontadas no backend, com foco na proteção ou exclusão de rotas backdoor.
-- **Status:** Em Andamento
+- **Status:** Concluído
 - **Issue:** [#2](https://github.com/gces-iorgut-startup/backend/issues/2)
 
 ---
@@ -56,8 +56,17 @@ Este documento consolida o andamento técnico da equipe ao longo do projeto, det
 - **Frente:** Segurança
 - **Trio / Responsáveis:** Paola, Lara e Magno
 - **Descrição:** Atualização de bibliotecas vulneráveis do backend (como fastify e fastify-jwt) para mitigar falhas de segurança.
-- **Status:** Em Andamento
+- **Status:** Concluído
 - **Issue:** [#3](https://github.com/gces-iorgut-startup/backend/issues/3)
+
+---
+
+### SEC-03: Migrar armazenamento de sessao do localStorage para Cookies HttpOnly com protecao CSRF
+- **Frente:** Seguranca
+- **Trio / Responsaveis:** Paola, Lara e Magno
+- **Descricao:** Migracao da arquitetura de autenticacao do sistema, removendo a persistencia de tokens do localStorage no frontend (mitigando ataques XSS) e implementando o envio de credenciais via Cookies HttpOnly, aliados a uma camada de protecao com tokens Anti-CSRF no backend (Fastify) e Axios.
+- **Status:** Em andamento
+- **Kanban:** [#4](https://github.com/gces-iorgut-startup/backend/issues/4)
 
 ---
 
