@@ -1280,7 +1280,7 @@
 <li><strong>MOB-01</strong>: Setup inicial Reactive Native.</li>
 <li><strong>MOB-02</strong>: Cache persistente offline e Pull-to-Refresh.</li>
 <li><strong>MOB-03</strong>: Geracao de build Android (.apk).</li>
-<li><strong>US01 a US15</strong>: Historias de usuario focadas na experiencia do tutor (Acessar aplicativo, visualizar animais, consultar resumo de saude, alternar pets, logout, detalhes de consulta, entre outras).</li>
+<li><strong>DEV E TEST US01 a US15</strong>: Historias de usuario focadas na experiencia do tutor (Acessar aplicativo, visualizar animais, consultar resumo de saude, alternar pets, logout, detalhes de consulta, entre outras).</li>
 </ul>
 <h2 id="seguranca">Seguranca</h2>
 <ul>
@@ -1294,8 +1294,7 @@
 <li><strong>FE-02</strong>: Redesign e implementacao da nova Landing Page institucional, removendo dados ficticios.</li>
 <li><strong>FE-03</strong>: Refatorar paginas monoliticas de Paciente, extraindo componentes reutilizaveis.</li>
 <li><strong>FE-04</strong>: Refatorar a pagina de cuidados clinicos, dividindo as secoes em abas acessiveis e isoladas.</li>
-<li><strong>FE-05</strong>: Melhorar acessibilidade associando ARIA roles, labels e focus trap em modais de agendamento.</li>
-<li><strong>FE-06</strong>: Implementar funcionalidade de solicitacao de agendamento e retorno diretamente pelo Portal do Tutor.</li>
+<li><strong>FE-05</strong>: Implementar funcionalidade de solicitacao de agendamento e retorno diretamente pelo Portal do Tutor.</li>
 </ul>
 <h2 id="backend-e-regras-de-negocio">Backend e Regras de Negocio</h2>
 <ul>
@@ -1323,7 +1322,7 @@
 <li><strong>CI-01</strong>: Corrigir timeouts de integracao nas pipelines do Vitest e adicionar verificacao de seguranca npm audit.</li>
 <li><strong>CI-02</strong>: Configurar ChromeDriver em modo headless nas GitHub Actions do Frontend para testes E2E.</li>
 <li><strong>CI-03</strong>: Implementar pipeline de build e deploy continuo da documentacao (MkDocs) via GitHub Pages.</li>
-<li><strong>CI-04</strong>: Correcao, seguranca e ajustes no pipeline de CI/CD referente exclusivamente ao aplicativo mobile.</li>
+<li><strong>CI-04</strong>: Implementar pipeline de build e deploy continuo da documentacao (MkDocs) via GitHub Pages.</li>
 <li><strong>INFRA-01</strong>: Definir o provisionamento de infraestrutura em nuvem, decidindo entre Docker em VPS padrao ou migracao AWS/GCP.</li>
 </ul>
 <h2 id="detalhamento-das-historias-de-usuario-mobile">Detalhamento das Historias de Usuario (Mobile)</h2>
@@ -1366,8 +1365,7 @@
 - [ ] Exibir pets vinculados ao tutor.
 - [ ] Exibir nome do pet.
 - [ ] Exibir foto do pet.
-- [ ] Permitir selecionar um pet.
-- [ ] Representar estado sem pets cadastrados.</p>
+- [ ] Permitir selecionar um pet.</p>
 <hr />
 <h3 id="us04-visualizar-informacoes-do-pet">US04 - Visualizar informacoes do pet</h3>
 <p><strong>Historia de Usuario</strong></p>
@@ -1436,7 +1434,6 @@
 - [ ] Exibir lista de atendimentos.
 - [ ] Exibir data do atendimento.
 - [ ] Exibir tipo de atendimento.
-- [ ] Exibir profissional responsavel.
 - [ ] Permitir acessar os detalhes do atendimento.
 - [ ] Representar historico vazio.</p>
 <hr />
