@@ -86,36 +86,15 @@ Este documento consolida o andamento tecnico da equipe ao longo do projeto, deta
 **Periodo:** [Data de Inicio] a [Data de Fim]
 **Objetivo da Sprint:** Entregas de melhoria em agendamento, refatoracoes cruciais em paginas pesadas, definicao de regra de negocios central e avancos no login mobile.
 
-### BE-01: Prontuario Universal para Perfil Owner
-- **Frente:** Backend / Regra de Negocio
-- **Trio / Responsaveis:** [Nome 1, Nome 2, Nome 3]
-- **Descricao:** Quebra de trava funcional que impedia donos da clinica de gerenciarem os prontuarios gerais sob sua propria responsabilidade.
-- **Status:** Homologado
+### INDICE: NOME
+- **Frente:** 
+- **Trio / Responsaveis:** [?, ?, ?]
+- **Descricao:** 
+- **Status:** Em andamento
+- **Kanban:** Link
+- **Issues:** Número da issue
 
-### FE-02: Redesign Institucional
-- **Frente:** Frontend Web
-- **Trio / Responsaveis:** [Nome 1, Nome 2, Nome 3]
-- **Descricao:** Criacao e integracao de uma nova Landing Page para alinhar o visual a realidade do aplicativo real.
-- **Status:** Homologado
-
-### MOB-02: Implementar Onboarding e Login seguro
-- **Frente:** Mobile
-- **Trio / Responsaveis:** Taynara, Joao, Luiza
-- **Descricao:** Implementacao pratica das US01 e US02 consumindo endpoints de login, e persistindo os credenciais com seguranca (SecureStore).
-- **Status:** Homologado
-
-### CI-02: Configurar Automacao Headless
-- **Frente:** CI/CD
-- **Trio / Responsaveis:** [Nome 1, Nome 2, Nome 3]
-- **Descricao:** Garantir a execucao invisivel e performatica de ChromeDriver no fluxo E2E das Actions no repositrio Web.
-- **Status:** Homologado
-
-### BE-02: Modelagem e Implementacao de Soft Delete
-- **Frente:** Backend / Modelagem
-- **Trio / Responsaveis:** [Nome 1, Nome 2, Nome 3]
-- **Descricao:** Adaptao do schema Prisma para evitar perdas irreversiveis de dados, ativando inativacao logica.
-- **Status:** Homologado
 
 ---
 
-*(Os demais itens como FE-03, FE-04, MOB-03 e adjacentes serao mapeados e atualizados conforme as Sprints 3 e 4 se consolidem)*
+*(Os demais itens como FE-03, FE-04, MOB-03 e adjacentes serao mapeados e atualizados conforme as próximas Sprints)*
