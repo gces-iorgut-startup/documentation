@@ -36,6 +36,26 @@ Este documento serve como modelo para relatar a presença, datas e assuntos abor
 - **Resumo/Anotações:** 
   - Foram levantadas as histórias de usuário (USs) e as respectivas atividades a serem executadas. Ficou deliberado que cada US será desdobrada em três etapas fundamentais: Protótipo, Desenvolvimento e Testes.
 
+### Weekly 2
+- **Data:** 13/09/2026
+- **Assunto:** Atividades desenvolvidas na sprint
+- **Participantes Presentes:**
+  - Taynara Vitorino
+  - João Marcos de Andrade
+  - Manoela Chaves
+  - Victor Hugo Bernardes
+  - Wallyson Souza
+  - Pedro Henrique Santos
+  - Paola do Nascimento
+  - Lara Mota
+  - Magno Vieira
+  - Thales Germano
+- **Participantes Ausentes:**
+  - Luiza Pugas
+  - Artur Galdino
+- **Resumo/Anotações:** 
+  - Discussão e acompanhamento das atividades desenvolvidas na sprint.
+
 ---
 
 ## Sprint 2 (Modelo)

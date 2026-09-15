@@ -9,52 +9,75 @@ Este documento consolida o andamento tecnico da equipe ao longo do projeto, deta
 
 ### MOB-01: Setup inicial React Native
 - **Frente:** Mobile (Infraestrutura)
-- **Trio / Responsaveis:** [?, ?, ?]
+- **Trio / Responsaveis:** Taynara, Luiza e Joao
 - **Descricao:** Configuracao da arquitetura base do aplicativo e ecossistema inicial em React Native.
-- **Status:** Em Andamento
+- **Status:** Finalizado
 - **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
+- **Issues:** #16
 
 ### PROT-01: Prototipos Mobile (US01 a US08)
 - **Frente:** Mobile (Design e Prototipacao)
 - **Trio / Responsaveis:** Taynara, Luiza e Joao
 - **Descricao:** Elaboracao dos prototipos navegaveis referentes as historias de usuario de 01 a 08 (Acesso e Meu Pet).
-- **Status:** Em Andamento
+- **Status:** Finalizado
 - **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
+- **Issues:** #1, #2, #3, #4, #5, #6, #7, #8
 
 ### PROT-02: Prototipos Mobile (US09 a US15)
 - **Frente:** Mobile (Design e Prototipacao)
 - **Trio / Responsaveis:** Manoela, Victor e Thales
 - **Descricao:** Elaboracao dos prototipos navegaveis referentes as historias de usuario de 09 a 15 (Saude e Agenda).
-- **Status:** Em Andamento
+- **Status:** Finalizado
 - **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
+- **Issues:** #9, #10, #11, #12, #13, #14, #15
+
+### DEV-01: Desenvolvimento Mobile (US01 a US08)
+- **Frente:** Mobile (Desenvolvimento)
+- **Trio / Responsaveis:** Taynara, Luiza e Joao
+- **Descricao:** Desenvolvimento das interfaces referentes aos prototipos das historias de usuario de 01 a 08.
+- **Status:** Em andamento
+- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
+- **Issues:** #17, #18
+
+### DEV-02: Desenvolvimento Mobile (US09 a US15)
+- **Frente:** Mobile (Desenvolvimento)
+- **Trio / Responsaveis:** Manoela, Victor e Thales
+- **Descricao:** Desenvolvimento das interfaces referentes aos prototipos das historias de usuario de 09 a 15.
+- **Status:** Em andamento
+- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
+- **Issues:** #20, #21
 
 ### BUG-01: Correcao do cadastro de senhas do tutor
 - **Frente:** Bug fix
 - **Trio / Responsaveis:** Wallyson, Pedro e Artur
 - **Descricao:** Analise e correcao das falhas e inconsistencias relacionadas ao fluxo de cadastro de senhas do tutor.
-- **Status:** Em Andamento
-- **Kanban:**
+- **Status:** Finalizado
+- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/6)
+- **Issues:** #1
 
 ### SEC-01: Proteger ou remover rotas backdoor
 - **Frente:** Seguranca
 - **Trio / Responsaveis:** Paola, Lara e Magno
 - **Descricao:** Resolucao de questoes de seguranca criticas apontadas no backend, focando na protecao ou exclusao de rotas backdoor.
-- **Status:** Em Andamento
-- **Kanban:**
+- **Status:** Finalizado
+- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/6)
+- **Issues:** #2
 
 ### SEC-02: Atualizar dependencias vulneraveis
 - **Frente:** Seguranca
 - **Trio / Responsaveis:** Paola, Lara e Magno
 - **Descricao:** Atualizacao de bibliotecas vulneraveis do backend (como fastify e fastify-jwt) para mitigar falhas de seguranca.
-- **Status:** Em Andamento
-- **Kanban:**
+- **Status:** Finalizado
+- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/6)
+- **Issues:** #3
 
-### CI-04: Ajustes de CI/CD do aplicativo mobile
+### CI-03: Ajustes de CI/CD do aplicativo mobile
 - **Frente:** CI/CD
 - **Trio / Responsaveis:** Paola, Lara e Magno
-- **Descricao:** Correcao e aprimoramento dos pipelines de integracao e entrega (CI/CD) focados na esteira do aplicativo mobile.
-- **Status:** Em Andamento
+- **Descricao:** Criação dos pipelines de integracao e entrega (CI/CD) focados na esteira do aplicativo mobile.
+- **Status:** Finalizado
 - **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
+- **Issues:** #23
 
 ---
 

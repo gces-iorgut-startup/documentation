@@ -7,7 +7,7 @@ O backlog a seguir contempla as atividades de engenharia, refatoracao, documenta
 - **MOB-01**: Setup inicial Reactive Native.
 - **MOB-02**: Cache persistente offline e Pull-to-Refresh.
 - **MOB-03**: Geracao de build Android (.apk).
-- **US01 a US15**: Historias de usuario focadas na experiencia do tutor (Acessar aplicativo, visualizar animais, consultar resumo de saude, alternar pets, logout, detalhes de consulta, entre outras).
+- **DEV E TEST US01 a US15**: Historias de usuario focadas na experiencia do tutor (Acessar aplicativo, visualizar animais, consultar resumo de saude, alternar pets, logout, detalhes de consulta, entre outras).
 
 ## Seguranca
 
@@ -21,8 +21,7 @@ O backlog a seguir contempla as atividades de engenharia, refatoracao, documenta
 - **FE-02**: Redesign e implementacao da nova Landing Page institucional, removendo dados ficticios.
 - **FE-03**: Refatorar paginas monoliticas de Paciente, extraindo componentes reutilizaveis.
 - **FE-04**: Refatorar a pagina de cuidados clinicos, dividindo as secoes em abas acessiveis e isoladas.
-- **FE-05**: Melhorar acessibilidade associando ARIA roles, labels e focus trap em modais de agendamento.
-- **FE-06**: Implementar funcionalidade de solicitacao de agendamento e retorno diretamente pelo Portal do Tutor.
+- **FE-05**: Implementar funcionalidade de solicitacao de agendamento e retorno diretamente pelo Portal do Tutor.
 
 ## Backend e Regras de Negocio
 
@@ -50,7 +49,7 @@ O backlog a seguir contempla as atividades de engenharia, refatoracao, documenta
 - **CI-01**: Corrigir timeouts de integracao nas pipelines do Vitest e adicionar verificacao de seguranca npm audit.
 - **CI-02**: Configurar ChromeDriver em modo headless nas GitHub Actions do Frontend para testes E2E.
 - **CI-03**: Implementar pipeline de build e deploy continuo da documentacao (MkDocs) via GitHub Pages.
-- **CI-04**: Correcao, seguranca e ajustes no pipeline de CI/CD referente exclusivamente ao aplicativo mobile.
+- **CI-04**: Implementar pipeline de build e deploy continuo da documentacao (MkDocs) via GitHub Pages.
 - **INFRA-01**: Definir o provisionamento de infraestrutura em nuvem, decidindo entre Docker em VPS padrao ou migracao AWS/GCP.
 
 ## Detalhamento das Historias de Usuario (Mobile)
@@ -103,7 +102,6 @@ Criar um prototipo navegavel de um aplicativo mobile do Iougurt voltado para o *
 - [ ] Exibir nome do pet.
 - [ ] Exibir foto do pet.
 - [ ] Permitir selecionar um pet.
-- [ ] Representar estado sem pets cadastrados.
 
 ---
 
@@ -184,7 +182,6 @@ Criar um prototipo navegavel de um aplicativo mobile do Iougurt voltado para o *
 - [ ] Exibir lista de atendimentos.
 - [ ] Exibir data do atendimento.
 - [ ] Exibir tipo de atendimento.
-- [ ] Exibir profissional responsavel.
 - [ ] Permitir acessar os detalhes do atendimento.
 - [ ] Representar historico vazio.
 
