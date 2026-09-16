@@ -2,99 +2,37 @@
 
 Este documento consolida o andamento tecnico da equipe ao longo do projeto, detalhando cada atividade entregue baseada no seu codigo de rastreabilidade. Os trios e os responsaveis por cada atividade sao indicados individualmente.
 
-## Sprint 1
+## Kanbans do Projeto
 
-**Periodo:** 31/08/2026 a 14/09/2026
-**Objetivo da Sprint:** Preparacao de fundacoes, seguranca inicial, limpeza de dependencias, Setup Mobile e primeiras User Stories do fluxo do tutor.
+- **Mobile:** [GitHub Projects - Mobile](https://github.com/orgs/gces-iorgut-startup/projects/5)
+- **Frontend:** [GitHub Projects - Frontend](https://github.com/orgs/gces-iorgut-startup/projects/7)
+- **Backend:** [GitHub Projects - Backend](https://github.com/orgs/gces-iorgut-startup/projects/6)
 
-### MOB-01: Setup inicial React Native
-- **Frente:** Mobile (Infraestrutura)
-- **Trio / Responsaveis:** Taynara, Luiza e Joao
-- **Descricao:** Configuracao da arquitetura base do aplicativo e ecossistema inicial em React Native.
-- **Status:** Finalizado
-- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
-- **Issues:** #16
-
-### PROT-01: Prototipos Mobile (US01 a US08)
-- **Frente:** Mobile (Design e Prototipacao)
-- **Trio / Responsaveis:** Taynara, Luiza e Joao
-- **Descricao:** Elaboracao dos prototipos navegaveis referentes as historias de usuario de 01 a 08 (Acesso e Meu Pet).
-- **Status:** Finalizado
-- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
-- **Issues:** #1, #2, #3, #4, #5, #6, #7, #8
-
-### PROT-02: Prototipos Mobile (US09 a US15)
-- **Frente:** Mobile (Design e Prototipacao)
-- **Trio / Responsaveis:** Manoela, Victor e Thales
-- **Descricao:** Elaboracao dos prototipos navegaveis referentes as historias de usuario de 09 a 15 (Saude e Agenda).
-- **Status:** Finalizado
-- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
-- **Issues:** #9, #10, #11, #12, #13, #14, #15
-
-### DEV-01: Desenvolvimento Mobile (US01 a US08)
-- **Frente:** Mobile (Desenvolvimento)
-- **Trio / Responsaveis:** Taynara, Luiza e Joao
-- **Descricao:** Desenvolvimento das interfaces referentes aos prototipos das historias de usuario de 01 a 08.
-- **Status:** Em andamento
-- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
-- **Issues:** #17, #18
-
-### DEV-02: Desenvolvimento Mobile (US09 a US15)
-- **Frente:** Mobile (Desenvolvimento)
-- **Trio / Responsaveis:** Manoela, Victor e Thales
-- **Descricao:** Desenvolvimento das interfaces referentes aos prototipos das historias de usuario de 09 a 15.
-- **Status:** Em andamento
-- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/5)
-- **Issues:** #20, #21
-
-### BUG-01: Correcao do cadastro de senhas do tutor
-- **Frente:** Bug fix
-- **Trio / Responsaveis:** Wallyson, Pedro e Artur
-- **Descricao:** Analise e correcao das falhas e inconsistencias relacionadas ao fluxo de cadastro de senhas do tutor.
-- **Status:** Finalizado
-- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/6)
-- **Issues:** #1
-
-### SEC-01: Proteger ou remover rotas backdoor
-- **Frente:** Seguranca
-- **Trio / Responsaveis:** Paola, Lara e Magno
-- **Descricao:** Resolucao de questoes de seguranca criticas apontadas no backend, focando na protecao ou exclusao de rotas backdoor.
-- **Status:** Finalizado
-- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/6)
-- **Issues:** #2
-
-### SEC-02: Atualizar dependencias vulneraveis
-- **Frente:** Segurança
-- **Trio / Responsaveis:** Paola, Lara e Magno
-- **Descricao:** Atualizacao de bibliotecas vulneraveis do backend (como fastify e fastify-jwt) para mitigar falhas de seguranca.
-- **Status:** Finalizado
-- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/6)
-- **Issues:** #3
-
-### SEC-03: Migrar armazenamento de sessão.
-- **Frente:** Segurança
-- **Trio / Responsaveis:** Paola, Lara e Magno
-- **Descricao:** Migrar armazenamento de sessao do localStorage para Cookies HttpOnly com protecao CSRF.
-- **Status:** Em revisão.
-- **Kanban:** [GitHub Issues](https://github.com/orgs/gces-iorgut-startup/projects/6)
-- **Issues:** #4
+# Sprint 01
+ 
+*Período:* 31/08/2026 a 14/09/2026
+ 
+## Entregas da Sprint
+ 
+| Trio de Desenvolvedores | Qtd. de Tarefas | Tarefas (Issues) | Assunto das Tarefas |
+|---|---:|---|---|
+| Taynara, Luiza e Joao | 3 | MOB-01 (#16), PROT-01 (#1 ao #8), DEV-01 (#17, #18) | Setup inicial, Protótipos e Desenvolvimento Mobile (Acesso e Meu Pet) |
+| Manoela, Victor e Thales | 2 | PROT-02 (#9 ao #15), DEV-02 (#20, #21) | Protótipos e Desenvolvimento Mobile (Saúde e Agenda) |
+| Wallyson, Pedro e Artur | 1 | BUG-01 (#1) | Correção do cadastro de senhas do tutor |
+| Paola, Lara e Magno | 3 | SEC-01 (#2), SEC-02 (#3), SEC-03 (#4) | Segurança (rotas backdoor, dependências vulneráveis e sessão) |
+ 
+---
+ 
+## Resumo
+ 
+- *Líder da Apresentação*: Taynara Vitorino
+- *Total de Tarefas:* 24
+- *Início da Sprint:* 31/08/2026
+- *Fim da Sprint:* 14/09/2026
 
 ---
 
-## Sprint 2
+# Sprint 02
 
-**Periodo:** [Data de Inicio] a [Data de Fim]
-**Objetivo da Sprint:** Entregas de melhoria em agendamento, refatoracoes cruciais em paginas pesadas, definicao de regra de negocios central e avancos no login mobile.
+*Período:* [Data de Início] a [Data de Fim]
 
-### INDICE: NOME
-- **Frente:** 
-- **Trio / Responsaveis:** [?, ?, ?]
-- **Descricao:** 
-- **Status:** Em andamento
-- **Kanban:** Link
-- **Issues:** Número da issue
-
-
----
-
-*(Os demais itens como FE-03, FE-04, MOB-03 e adjacentes serao mapeados e atualizados conforme as próximas Sprints)*
