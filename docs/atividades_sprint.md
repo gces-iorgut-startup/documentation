@@ -16,8 +16,8 @@ Este documento consolida o andamento tecnico da equipe ao longo do projeto, deta
  
 | Trio de Desenvolvedores | Qtd. de Tarefas | Tarefas (Issues) | Assunto das Tarefas |
 |---|---:|---|---|
-| Taynara, Luiza e Joao | 3 | MOB-01 (#16), PROT-01 (#1 ao #8), DEV-01 (#17, #18) | Setup inicial, Protótipos e Desenvolvimento Mobile (Acesso e Meu Pet) |
-| Manoela, Victor e Thales | 2 | PROT-02 (#9 ao #15), DEV-02 (#20, #21) | Protótipos e Desenvolvimento Mobile (Saúde e Agenda) |
+| Taynara, Luiza e Joao | 11 | MOB-01 (#16), PROT-01 (#1 ao #8), DEV-01 (#17, #18) | Setup inicial, Protótipos e Desenvolvimento Mobile (Acesso e Meu Pet) |
+| Manoela, Victor e Thales | 9 | PROT-02 (#9 ao #15), DEV-02 (#20, #21) | Protótipos e Desenvolvimento Mobile (Saúde e Agenda) |
 | Wallyson, Pedro e Artur | 1 | BUG-01 (#1) | Correção do cadastro de senhas do tutor |
 | Paola, Lara e Magno | 3 | SEC-01 (#2), SEC-02 (#3), SEC-03 (#4) | Segurança (rotas backdoor, dependências vulneráveis e sessão) |
  
