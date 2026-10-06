@@ -30,6 +30,8 @@ nav:
         - Atividades da Sprint: atividades_sprint.md
         - Registro de Reuniões: registro_reunioes_sprint.md
         - Protótipo Mobile: prototipo.md
+    - Contratos de API:
+        - BE-05 — Solicitação e Aprovação de Agendamentos: api_contract_be05.md
     - Base Herdada:
         - Requisitos Iniciais: requirements.md
         - Histórias de Usuário Base: us_stories.md
