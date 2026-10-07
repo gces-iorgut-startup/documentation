@@ -1,0 +1,2812 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../prototipo/">
+      
+      
+        <link rel="next" href="../requirements/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>BE-05 — Solicitação e Aprovação de Agendamentos - Iougurt Startup</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#contrato-da-api-be-05-solicitacao-e-aprovacao-de-agendamentos" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Iougurt Startup" class="md-header__button md-logo" aria-label="Iougurt Startup" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Iougurt Startup
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              BE-05 — Solicitação e Aprovação de Agendamentos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../backlog/" class="md-tabs__link">
+          
+  
+  
+  Gestão e Evolução
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Contratos de API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../requirements/" class="md-tabs__link">
+          
+  
+  
+  Base Herdada
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Iougurt Startup" class="md-nav__button md-logo" aria-label="Iougurt Startup" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Iougurt Startup
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão e Evolução
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Gestão e Evolução
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backlog do Produto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atividades_sprint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atividades da Sprint
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../registro_reunioes_sprint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registro de Reuniões
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototipo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Protótipo Mobile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contratos de API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Contratos de API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BE-05 — Solicitação e Aprovação de Agendamentos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BE-05 — Solicitação e Aprovação de Agendamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introdução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maquina-de-estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Máquina de estados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Máquina de estados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invariantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invariantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convencoes-gerais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convenções gerais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Convenções gerais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autenticacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autenticação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatos-de-erro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatos de erro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordem-de-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ordem de avaliação
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-dos-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo dos endpoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-post-portalappointmentsrequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. POST /portal/appointments/request
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. POST /portal/appointments/request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request body
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-201-created" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resposta 201 Created
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-get-portalappointments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. GET /portal/appointments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. GET /portal/appointments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resposta-200-ok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resposta 200 OK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-get-appointmentsstatuspending_approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. GET /appointments?status=PENDING_APPROVAL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. GET /appointments?status=PENDING_APPROVAL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query string
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-200-ok_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resposta 200 OK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-patch-appointmentsidapprove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. PATCH /appointments/:id/approve
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. PATCH /appointments/:id/approve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request body
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regras-na-ordem-em-que-sao-verificadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras, na ordem em que são verificadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-200-ok_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resposta 200 OK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-patch-appointmentsidreject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. PATCH /appointments/:id/reject
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. PATCH /appointments/:id/reject">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request body
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-200-ok_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resposta 200 OK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#catalogo-de-erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catálogo de erros
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Catálogo de erros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#400-bad-request-regra-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        400 Bad Request — regra de negócio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#401-unauthorized-token-ausente-invalido-ou-expirado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        401 Unauthorized — token ausente, inválido ou expirado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#403-forbidden-perfil-nao-autorizado-rotas-da-clinica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        403 Forbidden — perfil não autorizado (rotas da clínica)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#403-forbidden-regra-de-negocio-rotas-do-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        403 Forbidden — regra de negócio (rotas do portal)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#404-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        404 Not Found
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#409-conflict-conflito-na-agenda-do-veterinario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        409 Conflict — conflito na agenda do veterinário
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-unprocessable-entity-validacao-de-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        422 Unprocessable Entity — validação de schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras de negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mudancas-no-modelo-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mudanças no modelo de dados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impacto-em-rotas-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impacto em rotas existentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decisoes-pendentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decisões pendentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base Herdada
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base Herdada
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos Iniciais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../us_stories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórias de Usuário Base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mvp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planejamento MVP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../banco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelagem do Banco
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introdução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maquina-de-estados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Máquina de estados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Máquina de estados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invariantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invariantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convencoes-gerais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convenções gerais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Convenções gerais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autenticacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autenticação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatos-de-erro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatos de erro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordem-de-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ordem de avaliação
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-dos-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo dos endpoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-post-portalappointmentsrequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. POST /portal/appointments/request
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. POST /portal/appointments/request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request body
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-201-created" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resposta 201 Created
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-get-portalappointments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. GET /portal/appointments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. GET /portal/appointments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resposta-200-ok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resposta 200 OK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-get-appointmentsstatuspending_approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. GET /appointments?status=PENDING_APPROVAL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. GET /appointments?status=PENDING_APPROVAL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Query string
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-200-ok_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resposta 200 OK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-patch-appointmentsidapprove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. PATCH /appointments/:id/approve
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. PATCH /appointments/:id/approve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request body
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regras-na-ordem-em-que-sao-verificadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras, na ordem em que são verificadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-200-ok_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resposta 200 OK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-patch-appointmentsidreject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. PATCH /appointments/:id/reject
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. PATCH /appointments/:id/reject">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request body
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-200-ok_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resposta 200 OK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#catalogo-de-erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catálogo de erros
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Catálogo de erros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#400-bad-request-regra-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        400 Bad Request — regra de negócio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#401-unauthorized-token-ausente-invalido-ou-expirado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        401 Unauthorized — token ausente, inválido ou expirado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#403-forbidden-perfil-nao-autorizado-rotas-da-clinica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        403 Forbidden — perfil não autorizado (rotas da clínica)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#403-forbidden-regra-de-negocio-rotas-do-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        403 Forbidden — regra de negócio (rotas do portal)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#404-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        404 Not Found
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#409-conflict-conflito-na-agenda-do-veterinario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        409 Conflict — conflito na agenda do veterinário
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-unprocessable-entity-validacao-de-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        422 Unprocessable Entity — validação de schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras de negócio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mudancas-no-modelo-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mudanças no modelo de dados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impacto-em-rotas-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impacto em rotas existentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decisoes-pendentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decisões pendentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="contrato-da-api-be-05-solicitacao-e-aprovacao-de-agendamentos">Contrato da API — BE-05: Solicitação e Aprovação de Agendamentos</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Issue do contrato</strong></td>
+<td style="text-align: left;"><a href="https://github.com/gces-iorgut-startup/backend/issues/11">backend#11</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Issue de implementação</strong></td>
+<td style="text-align: left;"><a href="https://github.com/gces-iorgut-startup/backend/issues/13">backend#13</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Controle de acesso</strong></td>
+<td style="text-align: left;"><a href="https://github.com/gces-iorgut-startup/backend/issues/12">backend#12</a> (SEC04)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Situação</strong></td>
+<td style="text-align: left;">Implementado na <code>main</code> do backend (PR #17 e PR #16)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Consumidores</strong></td>
+<td style="text-align: left;">Frontend Web (FE-06) e App Mobile</td>
+</tr>
+</tbody>
+</table>
+<h2 id="introducao">Introdução</h2>
+<p>Até a BE-05, só a clínica criava agendamentos (<code>POST /appointments</code>), que já nasciam com status <code>SCHEDULED</code>. Este contrato formaliza o fluxo em que o <strong>tutor solicita</strong> um agendamento pelo Portal do Tutor ou pelo App Mobile, e a <strong>clínica aprova</strong> (atribuindo um veterinário) ou <strong>recusa</strong> (com justificativa).</p>
+<p>Todos os exemplos JSON deste documento foram <strong>capturados da API real</strong>: as requisições foram executadas contra o backend, com o banco simulado. Eles podem ser usados diretamente como mocks no frontend e no mobile.</p>
+<h2 id="maquina-de-estados">Máquina de estados</h2>
+<pre><code>               [ Tutor solicita ]
+                       │
+                       ▼
+              ┌──────────────────┐
+              │ PENDING_APPROVAL │
+              └────────┬─────────┘
+                       │
+         ┌─────────────┴─────────────┐
+         │                           │
+  [ Clínica aprova ]          [ Clínica recusa ]
+  (atribui vetId)             (informa motivo)
+         │                           │
+         ▼                           ▼
+   ┌───────────┐               ┌──────────┐
+   │ SCHEDULED │               │ REJECTED │
+   └───────────┘               └──────────┘
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Transição</th>
+<th style="text-align: left;">Rota</th>
+<th style="text-align: left;">Efeito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">— → <code>PENDING_APPROVAL</code></td>
+<td style="text-align: left;"><code>POST /portal/appointments/request</code></td>
+<td style="text-align: left;">Cria a solicitação sem veterinário (<code>vetId: null</code>) e sem horário de fim (<code>endDateTime: null</code>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PENDING_APPROVAL</code> → <code>SCHEDULED</code></td>
+<td style="text-align: left;"><code>PATCH /appointments/:id/approve</code></td>
+<td style="text-align: left;">Atribui <code>vetId</code>, define <code>endDateTime</code> e checa conflito na agenda do veterinário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PENDING_APPROVAL</code> → <code>REJECTED</code></td>
+<td style="text-align: left;"><code>PATCH /appointments/:id/reject</code></td>
+<td style="text-align: left;">Grava a justificativa em <code>cancelReason</code>. Estado final.</td>
+</tr>
+</tbody>
+</table>
+<p>A partir de <code>SCHEDULED</code>, o agendamento segue o ciclo já existente (<code>IN_PROGRESS</code>, <code>COMPLETED</code>, <code>CANCELLED</code>).</p>
+<h3 id="invariantes">Invariantes</h3>
+<ul>
+<li><code>vetId</code> é <strong>obrigatório</strong> nos status <code>SCHEDULED</code>, <code>IN_PROGRESS</code> e <code>COMPLETED</code>. Uma CHECK constraint no banco (<code>check_vet_id_status</code>) garante isso.</li>
+<li><code>vetId</code> é <strong><code>null</code></strong> em <code>PENDING_APPROVAL</code> e <code>REJECTED</code>. Um <code>CANCELLED</code> pode ter <code>vetId: null</code> quando a clínica cancela uma solicitação ainda pendente.</li>
+<li><strong>Cálculo de <code>endDateTime</code> na aprovação:</strong><ul>
+<li>Se for informado, precisa ser estritamente posterior a <code>dateTime</code> (senão, 400).</li>
+<li>Se for omitido, assume a duração padrão de <strong>15 minutos</strong> a partir de <code>dateTime</code> (<code>DEFAULT_APPOINTMENT_DURATION_MS</code>), a mesma convenção do <code>POST /appointments</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="convencoes-gerais">Convenções gerais</h2>
+<h3 id="autenticacao">Autenticação</h3>
+<p>Todas as rotas exigem o access token JWT no header:</p>
+<pre><code>Authorization: Bearer &lt;accessToken&gt;
+</code></pre>
+<p>O perfil (<code>role</code>) vem do próprio token: <code>OWNER</code>, <code>VET</code> ou <code>TUTOR</code>.</p>
+<h3 id="formatos">Formatos</h3>
+<ul>
+<li><strong>Datas:</strong> strings ISO 8601 em UTC (ex.: <code>2026-10-15T14:30:00.000Z</code>).</li>
+<li><strong>IDs:</strong> UUID v4.</li>
+<li><strong>Envelope de resposta:</strong> os objetos vêm sempre embrulhados: <code>{ "appointment": { ... } }</code> para um item e <code>{ "appointments": [ ... ] }</code> para listas.</li>
+<li><strong><code>category</code>:</strong> <code>VACCINATION</code>, <code>OBSERVATION</code>, <code>EXAM</code> ou <code>SURGICAL</code>.</li>
+<li><strong><code>status</code>:</strong> <code>PENDING_APPROVAL</code>, <code>SCHEDULED</code>, <code>IN_PROGRESS</code>, <code>COMPLETED</code>, <code>CANCELLED</code> ou <code>REJECTED</code>.</li>
+</ul>
+<h3 id="formatos-de-erro">Formatos de erro</h3>
+<p>A API usa <strong>três formatos</strong> de erro. O frontend deve tratar os três:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Origem</th>
+<th style="text-align: left;">Quando ocorre</th>
+<th style="text-align: left;">Formato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Middleware de autenticação e perfil</td>
+<td style="text-align: left;">401 (token ausente ou inválido) e 403 (perfil não autorizado) nas rotas da clínica</td>
+<td style="text-align: left;"><code>{ "message": "..." }</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Regra de negócio (<code>AppError</code>)</td>
+<td style="text-align: left;">400, 403, 404 e 409 vindos dos casos de uso</td>
+<td style="text-align: left;"><code>{ "statusCode": 400, "error": "..." }</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Validação de schema (Zod)</td>
+<td style="text-align: left;">422 (campo ausente, tipo ou formato inválido)</td>
+<td style="text-align: left;"><code>{ "statusCode": 422, "error": "Validation Error", "issues": { "&lt;campo&gt;": ["..."] }, "message": "Erros de validação nos campos" }</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ordem-de-avaliacao">Ordem de avaliação</h3>
+<p>A ordem das checagens muda conforme o grupo de rotas. Isso define qual erro aparece quando há mais de um problema na mesma requisição:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Grupo</th>
+<th style="text-align: left;">Ordem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Portal (<code>/portal/...</code>)</td>
+<td style="text-align: left;">autenticação (401) → validação (422) → regras do caso de uso (403, 404, 400)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Clínica (<code>/appointments/...</code>)</td>
+<td style="text-align: left;">validação (422) → autenticação (401) → perfil (403) → regras do caso de uso (404, 400, 409)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplo:</strong> um <code>PATCH /appointments/:id/approve</code> <strong>sem token e com body inválido</strong> retorna <strong>422</strong>, não 401.</p>
+<h2 id="resumo-dos-endpoints">Resumo dos endpoints</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">#</th>
+<th style="text-align: left;">Método e rota</th>
+<th style="text-align: left;">Perfil</th>
+<th style="text-align: left;">Sucesso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><code>POST /portal/appointments/request</code></td>
+<td style="text-align: left;"><code>TUTOR</code></td>
+<td style="text-align: left;"><code>201</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"><code>GET /portal/appointments</code></td>
+<td style="text-align: left;"><code>TUTOR</code></td>
+<td style="text-align: left;"><code>200</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><code>GET /appointments?status=PENDING_APPROVAL</code></td>
+<td style="text-align: left;"><code>OWNER</code>, <code>VET</code></td>
+<td style="text-align: left;"><code>200</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;"><code>PATCH /appointments/:id/approve</code></td>
+<td style="text-align: left;"><code>OWNER</code>, <code>VET</code></td>
+<td style="text-align: left;"><code>200</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><code>PATCH /appointments/:id/reject</code></td>
+<td style="text-align: left;"><code>OWNER</code>, <code>VET</code></td>
+<td style="text-align: left;"><code>200</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-post-portalappointmentsrequest">1. <code>POST /portal/appointments/request</code></h2>
+<p>O tutor solicita um agendamento para um dos seus pets. Ele <strong>não escolhe o veterinário</strong>.</p>
+<ul>
+<li><strong>Perfil:</strong> <code>TUTOR</code>.</li>
+<li><strong>Alias:</strong> <code>POST /portal/appointments</code> tem o mesmo comportamento. A rota principal é <code>/request</code>.</li>
+</ul>
+<h3 id="request-body">Request body</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Campo</th>
+<th style="text-align: left;">Tipo</th>
+<th style="text-align: left;">Obrigatório</th>
+<th style="text-align: left;">Regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>patientId</code></td>
+<td style="text-align: left;">UUID</td>
+<td style="text-align: left;">sim</td>
+<td style="text-align: left;">Pet pertencente ao tutor logado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>category</code></td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">sim</td>
+<td style="text-align: left;"><code>VACCINATION</code>, <code>OBSERVATION</code>, <code>EXAM</code> ou <code>SURGICAL</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>dateTime</code></td>
+<td style="text-align: left;">data ISO 8601</td>
+<td style="text-align: left;">sim</td>
+<td style="text-align: left;">Precisa ser no futuro.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>observation</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">não</td>
+<td style="text-align: left;">Observação livre do tutor.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-json">{
+  &quot;patientId&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+  &quot;category&quot;: &quot;VACCINATION&quot;,
+  &quot;dateTime&quot;: &quot;2026-10-15T14:30:00.000Z&quot;,
+  &quot;observation&quot;: &quot;Animal tem histórico de reação alérgica&quot;
+}
+</code></pre>
+<h3 id="resposta-201-created">Resposta <code>201 Created</code></h3>
+<pre><code class="language-json">{
+  &quot;appointment&quot;: {
+    &quot;id&quot;: &quot;77777777-7777-7777-7777-777777777777&quot;,
+    &quot;patientId&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+    &quot;vetId&quot;: null,
+    &quot;dateTime&quot;: &quot;2026-10-15T14:30:00.000Z&quot;,
+    &quot;endDateTime&quot;: null,
+    &quot;category&quot;: &quot;VACCINATION&quot;,
+    &quot;status&quot;: &quot;PENDING_APPROVAL&quot;,
+    &quot;observation&quot;: &quot;Animal tem histórico de reação alérgica&quot;,
+    &quot;cancelReason&quot;: null,
+    &quot;createdAt&quot;: &quot;2026-10-04T15:00:00.000Z&quot;,
+    &quot;updatedAt&quot;: &quot;2026-10-04T15:00:00.000Z&quot;,
+    &quot;patient&quot;: {
+      &quot;id&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+      &quot;name&quot;: &quot;Rex&quot;,
+      &quot;species&quot;: &quot;Canino&quot;
+    }
+  }
+}
+</code></pre>
+<h3 id="erros">Erros</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Status</th>
+<th style="text-align: left;">Corpo</th>
+<th style="text-align: left;">Causa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>401</code></td>
+<td style="text-align: left;"><code>{ "message": "Token inválido ou expirado." }</code></td>
+<td style="text-align: left;">Token ausente, inválido ou expirado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>422</code></td>
+<td style="text-align: left;">Formato de validação (ver <a href="#catalogo-de-erros">Catálogo de erros</a>)</td>
+<td style="text-align: left;"><code>patientId</code> ausente ou inválido, <code>category</code> desconhecida, <code>dateTime</code> inválido.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>403</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 403, "error": "Acesso restrito ao portal do tutor." }</code></td>
+<td style="text-align: left;">Token de <code>OWNER</code> ou <code>VET</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>404</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 404, "error": "Conta de tutor não encontrada." }</code></td>
+<td style="text-align: left;">Usuário <code>TUTOR</code> sem cadastro de tutor vinculado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>404</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 404, "error": "Paciente não encontrado." }</code></td>
+<td style="text-align: left;"><code>patientId</code> inexistente.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>403</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 403, "error": "Você não tem permissão para solicitar agendamento para este animal." }</code></td>
+<td style="text-align: left;">O pet pertence a outro tutor.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>400</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 400, "error": "A data do agendamento deve ser futura." }</code></td>
+<td style="text-align: left;"><code>dateTime</code> no passado ou igual ao instante atual.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-get-portalappointments">2. <code>GET /portal/appointments</code></h2>
+<p>Lista os agendamentos e as solicitações de <strong>todos os pets do tutor logado</strong>, em <strong>qualquer status</strong>, do mais recente para o mais antigo (<code>dateTime</code> decrescente). O tutor usa essa rota para acompanhar se o pedido está pendente, foi aprovado ou foi recusado, e por qual motivo (<code>cancelReason</code>).</p>
+<ul>
+<li><strong>Perfil:</strong> <code>TUTOR</code>.</li>
+<li><strong>Parâmetros:</strong> nenhum.</li>
+</ul>
+<p><strong>Atenção:</strong> esta rota <strong>não inclui o objeto <code>vet</code></strong>, só o <code>vetId</code>. Para mostrar o nome do veterinário de uma consulta aprovada, o front precisa resolver o <code>vetId</code> por conta própria. Incluir o <code>vet</code> aqui está registrado como melhoria.</p>
+<h3 id="resposta-200-ok">Resposta <code>200 OK</code></h3>
+<pre><code class="language-json">{
+  &quot;appointments&quot;: [
+    {
+      &quot;id&quot;: &quot;77777777-7777-7777-7777-777777777777&quot;,
+      &quot;patientId&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+      &quot;vetId&quot;: null,
+      &quot;dateTime&quot;: &quot;2026-10-15T14:30:00.000Z&quot;,
+      &quot;endDateTime&quot;: null,
+      &quot;category&quot;: &quot;VACCINATION&quot;,
+      &quot;status&quot;: &quot;REJECTED&quot;,
+      &quot;observation&quot;: &quot;Animal tem histórico de reação alérgica&quot;,
+      &quot;cancelReason&quot;: &quot;Sem disponibilidade de profissionais no horário solicitado.&quot;,
+      &quot;createdAt&quot;: &quot;2026-10-04T15:00:00.000Z&quot;,
+      &quot;updatedAt&quot;: &quot;2026-10-04T15:15:00.000Z&quot;,
+      &quot;patient&quot;: {
+        &quot;id&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+        &quot;name&quot;: &quot;Rex&quot;,
+        &quot;species&quot;: &quot;Canino&quot;
+      }
+    },
+    {
+      &quot;id&quot;: &quot;bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb&quot;,
+      &quot;patientId&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+      &quot;vetId&quot;: &quot;33333333-3333-3333-3333-333333333333&quot;,
+      &quot;dateTime&quot;: &quot;2026-10-12T09:00:00.000Z&quot;,
+      &quot;endDateTime&quot;: &quot;2026-10-12T09:15:00.000Z&quot;,
+      &quot;category&quot;: &quot;EXAM&quot;,
+      &quot;status&quot;: &quot;SCHEDULED&quot;,
+      &quot;observation&quot;: null,
+      &quot;cancelReason&quot;: null,
+      &quot;createdAt&quot;: &quot;2026-10-04T15:00:00.000Z&quot;,
+      &quot;updatedAt&quot;: &quot;2026-10-04T15:00:00.000Z&quot;,
+      &quot;patient&quot;: {
+        &quot;id&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+        &quot;name&quot;: &quot;Rex&quot;,
+        &quot;species&quot;: &quot;Canino&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+<h3 id="erros_1">Erros</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Status</th>
+<th style="text-align: left;">Corpo</th>
+<th style="text-align: left;">Causa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>401</code></td>
+<td style="text-align: left;"><code>{ "message": "Token inválido ou expirado." }</code></td>
+<td style="text-align: left;">Token ausente, inválido ou expirado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>403</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 403, "error": "Acesso restrito ao portal do tutor." }</code></td>
+<td style="text-align: left;">Token de <code>OWNER</code> ou <code>VET</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>404</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 404, "error": "Conta de tutor não encontrada." }</code></td>
+<td style="text-align: left;">Usuário <code>TUTOR</code> sem cadastro de tutor vinculado.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-get-appointmentsstatuspending_approval">3. <code>GET /appointments?status=PENDING_APPROVAL</code></h2>
+<p>Fila de solicitações da clínica. É a <strong>mesma rota da agenda diária</strong> (<code>GET /appointments?date=YYYY-MM-DD</code>), agora com o filtro <code>status</code>.</p>
+<ul>
+<li><strong>Perfil:</strong> <code>OWNER</code> ou <code>VET</code>.</li>
+</ul>
+<h3 id="query-string">Query string</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parâmetro</th>
+<th style="text-align: left;">Tipo</th>
+<th style="text-align: left;">Obrigatório</th>
+<th style="text-align: left;">Regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>status</code></td>
+<td style="text-align: left;">enum</td>
+<td style="text-align: left;">condicional</td>
+<td style="text-align: left;">Qualquer valor de <code>status</code>. Quando informado, a lista traz só esse status, de todas as datas, em ordem crescente de <code>dateTime</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>date</code></td>
+<td style="text-align: left;"><code>YYYY-MM-DD</code></td>
+<td style="text-align: left;">condicional</td>
+<td style="text-align: left;">Sem <code>status</code>, é obrigatório e retorna a agenda do dia. Com <code>status</code>, é opcional e restringe a lista àquele dia.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>vetId</code></td>
+<td style="text-align: left;">UUID</td>
+<td style="text-align: left;">não</td>
+<td style="text-align: left;">Só se aplica à agenda diária (sem <code>status</code>).</td>
+</tr>
+</tbody>
+</table>
+<p>É preciso informar <strong>pelo menos um</strong> entre <code>date</code> e <code>status</code>.</p>
+<p><strong>Agenda diária:</strong> sem <code>status</code>, a rota retorna apenas <code>SCHEDULED</code>, <code>IN_PROGRESS</code> e <code>COMPLETED</code>. Solicitações pendentes e recusadas <strong>não aparecem</strong> na agenda.</p>
+<h3 id="resposta-200-ok_1">Resposta <code>200 OK</code></h3>
+<pre><code class="language-json">{
+  &quot;appointments&quot;: [
+    {
+      &quot;id&quot;: &quot;77777777-7777-7777-7777-777777777777&quot;,
+      &quot;patientId&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+      &quot;vetId&quot;: null,
+      &quot;dateTime&quot;: &quot;2026-10-15T14:30:00.000Z&quot;,
+      &quot;endDateTime&quot;: null,
+      &quot;category&quot;: &quot;VACCINATION&quot;,
+      &quot;status&quot;: &quot;PENDING_APPROVAL&quot;,
+      &quot;observation&quot;: &quot;Animal tem histórico de reação alérgica&quot;,
+      &quot;cancelReason&quot;: null,
+      &quot;createdAt&quot;: &quot;2026-10-04T15:00:00.000Z&quot;,
+      &quot;updatedAt&quot;: &quot;2026-10-04T15:00:00.000Z&quot;,
+      &quot;patient&quot;: {
+        &quot;id&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+        &quot;name&quot;: &quot;Rex&quot;,
+        &quot;species&quot;: &quot;Canino&quot;,
+        &quot;clinicId&quot;: &quot;11111111-1111-1111-1111-111111111111&quot;,
+        &quot;photoUrl&quot;: null
+      },
+      &quot;vet&quot;: null
+    }
+  ]
+}
+</code></pre>
+<h3 id="erros_2">Erros</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Status</th>
+<th style="text-align: left;">Corpo</th>
+<th style="text-align: left;">Causa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>422</code></td>
+<td style="text-align: left;"><code>issues: { "date": ["Informe date ou status"] }</code></td>
+<td style="text-align: left;">Nem <code>date</code> nem <code>status</code> informados.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>422</code></td>
+<td style="text-align: left;"><code>issues: { "status": ["Invalid enum value. ..."] }</code></td>
+<td style="text-align: left;"><code>status</code> desconhecido.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>401</code></td>
+<td style="text-align: left;"><code>{ "message": "Token inválido ou expirado." }</code></td>
+<td style="text-align: left;">Token ausente, inválido ou expirado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>403</code></td>
+<td style="text-align: left;"><code>{ "message": "Acesso não autorizado para este perfil." }</code></td>
+<td style="text-align: left;">Token de <code>TUTOR</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-patch-appointmentsidapprove">4. <code>PATCH /appointments/:id/approve</code></h2>
+<p>A clínica aprova a solicitação e atribui o veterinário responsável.</p>
+<ul>
+<li><strong>Perfil:</strong> <code>OWNER</code> ou <code>VET</code>.</li>
+<li><strong>Parâmetro de rota:</strong> <code>id</code> (UUID do agendamento).</li>
+</ul>
+<h3 id="request-body_1">Request body</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Campo</th>
+<th style="text-align: left;">Tipo</th>
+<th style="text-align: left;">Obrigatório</th>
+<th style="text-align: left;">Regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>vetId</code></td>
+<td style="text-align: left;">UUID</td>
+<td style="text-align: left;">sim</td>
+<td style="text-align: left;">Usuário <code>OWNER</code> ou <code>VET</code> da mesma clínica.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endDateTime</code></td>
+<td style="text-align: left;">data ISO 8601</td>
+<td style="text-align: left;">não</td>
+<td style="text-align: left;">Posterior a <code>dateTime</code>. Se omitido, usa <code>dateTime</code> + 15 min.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-json">{
+  &quot;vetId&quot;: &quot;33333333-3333-3333-3333-333333333333&quot;,
+  &quot;endDateTime&quot;: &quot;2026-10-15T15:00:00.000Z&quot;
+}
+</code></pre>
+<h3 id="regras-na-ordem-em-que-sao-verificadas">Regras, na ordem em que são verificadas</h3>
+<ol>
+<li>O agendamento precisa existir e ser da clínica do usuário (senão, 404).</li>
+<li>O status precisa ser <code>PENDING_APPROVAL</code> (senão, 400).</li>
+<li>O <code>dateTime</code> solicitado precisa ser no futuro (senão, 400).</li>
+<li>O veterinário precisa existir, ser da mesma clínica e não ter perfil <code>TUTOR</code> (senão, 404).</li>
+<li>Se informado, <code>endDateTime</code> precisa ser maior que <code>dateTime</code> (senão, 400).</li>
+<li>O veterinário não pode ter consulta <code>SCHEDULED</code> ou <code>IN_PROGRESS</code> no intervalo (senão, 409). Outras solicitações pendentes no mesmo horário <strong>não</strong> contam como conflito.</li>
+</ol>
+<h3 id="resposta-200-ok_2">Resposta <code>200 OK</code></h3>
+<pre><code class="language-json">{
+  &quot;appointment&quot;: {
+    &quot;id&quot;: &quot;77777777-7777-7777-7777-777777777777&quot;,
+    &quot;patientId&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+    &quot;vetId&quot;: &quot;33333333-3333-3333-3333-333333333333&quot;,
+    &quot;dateTime&quot;: &quot;2026-10-15T14:30:00.000Z&quot;,
+    &quot;endDateTime&quot;: &quot;2026-10-15T15:00:00.000Z&quot;,
+    &quot;category&quot;: &quot;VACCINATION&quot;,
+    &quot;status&quot;: &quot;SCHEDULED&quot;,
+    &quot;observation&quot;: &quot;Animal tem histórico de reação alérgica&quot;,
+    &quot;cancelReason&quot;: null,
+    &quot;createdAt&quot;: &quot;2026-10-04T15:00:00.000Z&quot;,
+    &quot;updatedAt&quot;: &quot;2026-10-04T15:10:00.000Z&quot;,
+    &quot;patient&quot;: {
+      &quot;id&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+      &quot;name&quot;: &quot;Rex&quot;,
+      &quot;species&quot;: &quot;Canino&quot;,
+      &quot;clinicId&quot;: &quot;11111111-1111-1111-1111-111111111111&quot;,
+      &quot;photoUrl&quot;: null
+    },
+    &quot;vet&quot;: {
+      &quot;id&quot;: &quot;33333333-3333-3333-3333-333333333333&quot;,
+      &quot;name&quot;: &quot;Dra. Veterinária&quot;
+    }
+  }
+}
+</code></pre>
+<h3 id="erros_3">Erros</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Status</th>
+<th style="text-align: left;">Corpo</th>
+<th style="text-align: left;">Causa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>422</code></td>
+<td style="text-align: left;"><code>issues: { "vetId": ["Required"] }</code></td>
+<td style="text-align: left;"><code>vetId</code> ausente ou inválido, <code>endDateTime</code> inválido, <code>id</code> não é UUID.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>401</code></td>
+<td style="text-align: left;"><code>{ "message": "Token inválido ou expirado." }</code></td>
+<td style="text-align: left;">Token ausente, inválido ou expirado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>403</code></td>
+<td style="text-align: left;"><code>{ "message": "Acesso não autorizado para este perfil." }</code></td>
+<td style="text-align: left;">Token de <code>TUTOR</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>404</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 404, "error": "Agendamento não encontrado." }</code></td>
+<td style="text-align: left;">Agendamento inexistente ou de outra clínica.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>400</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 400, "error": "Apenas agendamentos com status PENDING_APPROVAL podem ser aprovados." }</code></td>
+<td style="text-align: left;">O agendamento já foi aprovado, recusado, cancelado etc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>400</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 400, "error": "Não é possível aprovar uma solicitação com data no passado." }</code></td>
+<td style="text-align: left;">A data solicitada já passou.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>404</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 404, "error": "Veterinário não encontrado" }</code></td>
+<td style="text-align: left;"><code>vetId</code> inexistente, de outra clínica ou com perfil <code>TUTOR</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>400</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 400, "error": "O horário de fim deve ser posterior ao horário de início." }</code></td>
+<td style="text-align: left;"><code>endDateTime</code> menor ou igual a <code>dateTime</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>409</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 409, "error": "Este horário já está ocupado." }</code></td>
+<td style="text-align: left;">Conflito na agenda do veterinário.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-patch-appointmentsidreject">5. <code>PATCH /appointments/:id/reject</code></h2>
+<p>A clínica recusa a solicitação, com justificativa obrigatória. O tutor vê o motivo em <code>cancelReason</code> no <code>GET /portal/appointments</code>.</p>
+<ul>
+<li><strong>Perfil:</strong> <code>OWNER</code> ou <code>VET</code>.</li>
+<li><strong>Parâmetro de rota:</strong> <code>id</code> (UUID do agendamento).</li>
+</ul>
+<h3 id="request-body_2">Request body</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Campo</th>
+<th style="text-align: left;">Tipo</th>
+<th style="text-align: left;">Obrigatório</th>
+<th style="text-align: left;">Regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>reason</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">sim</td>
+<td style="text-align: left;">Pelo menos 1 caractere após remover os espaços das pontas. É gravado em <code>cancelReason</code>.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-json">{
+  &quot;reason&quot;: &quot;Sem disponibilidade de profissionais no horário solicitado.&quot;
+}
+</code></pre>
+<h3 id="resposta-200-ok_3">Resposta <code>200 OK</code></h3>
+<pre><code class="language-json">{
+  &quot;appointment&quot;: {
+    &quot;id&quot;: &quot;77777777-7777-7777-7777-777777777777&quot;,
+    &quot;patientId&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+    &quot;vetId&quot;: null,
+    &quot;dateTime&quot;: &quot;2026-10-15T14:30:00.000Z&quot;,
+    &quot;endDateTime&quot;: null,
+    &quot;category&quot;: &quot;VACCINATION&quot;,
+    &quot;status&quot;: &quot;REJECTED&quot;,
+    &quot;observation&quot;: &quot;Animal tem histórico de reação alérgica&quot;,
+    &quot;cancelReason&quot;: &quot;Sem disponibilidade de profissionais no horário solicitado.&quot;,
+    &quot;createdAt&quot;: &quot;2026-10-04T15:00:00.000Z&quot;,
+    &quot;updatedAt&quot;: &quot;2026-10-04T15:15:00.000Z&quot;,
+    &quot;patient&quot;: {
+      &quot;id&quot;: &quot;66666666-6666-6666-6666-666666666666&quot;,
+      &quot;name&quot;: &quot;Rex&quot;,
+      &quot;species&quot;: &quot;Canino&quot;,
+      &quot;clinicId&quot;: &quot;11111111-1111-1111-1111-111111111111&quot;,
+      &quot;photoUrl&quot;: null
+    },
+    &quot;vet&quot;: null
+  }
+}
+</code></pre>
+<h3 id="erros_4">Erros</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Status</th>
+<th style="text-align: left;">Corpo</th>
+<th style="text-align: left;">Causa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>422</code></td>
+<td style="text-align: left;"><code>issues: { "reason": ["Justificativa deve ter ao menos 1 caractere"] }</code></td>
+<td style="text-align: left;"><code>reason</code> ausente ou em branco, ou <code>id</code> não é UUID.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>401</code></td>
+<td style="text-align: left;"><code>{ "message": "Token inválido ou expirado." }</code></td>
+<td style="text-align: left;">Token ausente, inválido ou expirado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>403</code></td>
+<td style="text-align: left;"><code>{ "message": "Acesso não autorizado para este perfil." }</code></td>
+<td style="text-align: left;">Token de <code>TUTOR</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>404</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 404, "error": "Agendamento não encontrado." }</code></td>
+<td style="text-align: left;">Agendamento inexistente ou de outra clínica.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>400</code></td>
+<td style="text-align: left;"><code>{ "statusCode": 400, "error": "Apenas agendamentos com status PENDING_APPROVAL podem ser recusados." }</code></td>
+<td style="text-align: left;">O agendamento não está pendente.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="catalogo-de-erros">Catálogo de erros</h2>
+<p>Exemplos completos de cada código de erro, prontos para usar como mock.</p>
+<h3 id="400-bad-request-regra-de-negocio">400 Bad Request — regra de negócio</h3>
+<pre><code class="language-json">{
+  &quot;statusCode&quot;: 400,
+  &quot;error&quot;: &quot;Apenas agendamentos com status PENDING_APPROVAL podem ser aprovados.&quot;
+}
+</code></pre>
+<h3 id="401-unauthorized-token-ausente-invalido-ou-expirado">401 Unauthorized — token ausente, inválido ou expirado</h3>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Token inválido ou expirado.&quot;
+}
+</code></pre>
+<h3 id="403-forbidden-perfil-nao-autorizado-rotas-da-clinica">403 Forbidden — perfil não autorizado (rotas da clínica)</h3>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Acesso não autorizado para este perfil.&quot;
+}
+</code></pre>
+<h3 id="403-forbidden-regra-de-negocio-rotas-do-portal">403 Forbidden — regra de negócio (rotas do portal)</h3>
+<pre><code class="language-json">{
+  &quot;statusCode&quot;: 403,
+  &quot;error&quot;: &quot;Você não tem permissão para solicitar agendamento para este animal.&quot;
+}
+</code></pre>
+<h3 id="404-not-found">404 Not Found</h3>
+<pre><code class="language-json">{
+  &quot;statusCode&quot;: 404,
+  &quot;error&quot;: &quot;Agendamento não encontrado.&quot;
+}
+</code></pre>
+<h3 id="409-conflict-conflito-na-agenda-do-veterinario">409 Conflict — conflito na agenda do veterinário</h3>
+<pre><code class="language-json">{
+  &quot;statusCode&quot;: 409,
+  &quot;error&quot;: &quot;Este horário já está ocupado.&quot;
+}
+</code></pre>
+<h3 id="422-unprocessable-entity-validacao-de-schema">422 Unprocessable Entity — validação de schema</h3>
+<p>Cada campo inválido aparece como uma chave em <code>issues</code>, com a lista de mensagens daquele campo.</p>
+<pre><code class="language-json">{
+  &quot;statusCode&quot;: 422,
+  &quot;error&quot;: &quot;Validation Error&quot;,
+  &quot;issues&quot;: {
+    &quot;patientId&quot;: [
+      &quot;Required&quot;
+    ],
+    &quot;category&quot;: [
+      &quot;Invalid enum value. Expected 'VACCINATION' | 'OBSERVATION' | 'EXAM' | 'SURGICAL', received 'CONSULTA'&quot;
+    ]
+  },
+  &quot;message&quot;: &quot;Erros de validação nos campos&quot;
+}
+</code></pre>
+<h2 id="regras-de-negocio">Regras de negócio</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">#</th>
+<th style="text-align: left;">Regra</th>
+<th style="text-align: left;">Origem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">O tutor solicita escolhendo pet, <code>category</code> e <code>dateTime</code>. Não escolhe o veterinário.</td>
+<td style="text-align: left;">Especificação formal</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">A solicitação nasce <code>PENDING_APPROVAL</code>, com <code>vetId: null</code>.</td>
+<td style="text-align: left;">Especificação formal</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">A aprovação exige atribuir um veterinário e leva a <code>SCHEDULED</code>.</td>
+<td style="text-align: left;">Especificação formal</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">A recusa exige justificativa e leva a <code>REJECTED</code>.</td>
+<td style="text-align: left;">Especificação formal</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">O status <code>REJECTED</code> é separado de <code>CANCELLED</code>, para distinguir a recusa de uma solicitação do cancelamento de uma consulta confirmada.</td>
+<td style="text-align: left;">Decisão do time</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">O tutor só solicita para pets da própria conta.</td>
+<td style="text-align: left;">Decisão do time</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">A data solicitada precisa ser no futuro.</td>
+<td style="text-align: left;">Decisão do time</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">O conflito de agenda é checado <strong>apenas na aprovação</strong>, nunca na solicitação.</td>
+<td style="text-align: left;">Decisão do time</td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">A fila da clínica usa <code>GET /appointments?status=PENDING_APPROVAL</code>, sem rota dedicada.</td>
+<td style="text-align: left;">Decisão do time</td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">O tutor acompanha suas solicitações por <code>GET /portal/appointments</code>.</td>
+<td style="text-align: left;">Decisão do time</td>
+</tr>
+<tr>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">A rota principal da solicitação é <code>POST /portal/appointments/request</code>. <code>POST /portal/appointments</code> é um alias.</td>
+<td style="text-align: left;">Resolução do conflito documental</td>
+</tr>
+<tr>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">Aprovar e recusar são permitidos a <code>OWNER</code> e <code>VET</code>.</td>
+<td style="text-align: left;">Decisão do time</td>
+</tr>
+<tr>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">Não é possível aprovar uma solicitação cuja data já passou.</td>
+<td style="text-align: left;">Decisão de implementação</td>
+</tr>
+<tr>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">Um usuário com perfil <code>TUTOR</code> não pode ser atribuído como veterinário.</td>
+<td style="text-align: left;">Decisão de implementação</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mudancas-no-modelo-de-dados">Mudanças no modelo de dados</h2>
+<p>Migration <code>20261005211500_add_pending_rejected_status_and_optional_vet</code>:</p>
+<ul>
+<li>O enum <code>AppointmentStatus</code> ganha <code>PENDING_APPROVAL</code> e <code>REJECTED</code>.</li>
+<li>A coluna <code>appointments.vet_id</code> passa a aceitar <code>NULL</code>.</li>
+<li>Nova CHECK constraint, que garante o invariante de <code>vetId</code>:</li>
+</ul>
+<pre><code class="language-sql">ALTER TABLE &quot;appointments&quot;
+  ADD CONSTRAINT &quot;check_vet_id_status&quot;
+  CHECK (
+    (&quot;status&quot; IN ('SCHEDULED', 'IN_PROGRESS', 'COMPLETED') AND &quot;vet_id&quot; IS NOT NULL)
+    OR (&quot;status&quot; NOT IN ('SCHEDULED', 'IN_PROGRESS', 'COMPLETED'))
+  );
+</code></pre>
+<p><strong>Impacto nos clientes:</strong> <code>vetId</code> e <code>vet</code> passam a poder ser <code>null</code> em qualquer resposta que traga agendamentos. As tipagens do frontend e do mobile (ex.: <code>vetId: string</code>) precisam aceitar <code>null</code>.</p>
+<h2 id="impacto-em-rotas-existentes">Impacto em rotas existentes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Rota ou recurso</th>
+<th style="text-align: left;">Comportamento com os novos status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>GET /appointments?date=</code> (agenda diária)</td>
+<td style="text-align: left;">Mostra só <code>SCHEDULED</code>, <code>IN_PROGRESS</code> e <code>COMPLETED</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>POST /appointments</code> e <code>PATCH /appointments/:id/reschedule</code></td>
+<td style="text-align: left;">O conflito de agenda considera só consultas <code>SCHEDULED</code> e <code>IN_PROGRESS</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PATCH /appointments/:id/reschedule</code></td>
+<td style="text-align: left;">Continua aceitando só <code>SCHEDULED</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DELETE /appointments/:id</code></td>
+<td style="text-align: left;">Pode cancelar uma solicitação <code>PENDING_APPROVAL</code> (cancelamento administrativo). Ela vira <code>CANCELLED</code>. Hoje também aceita <code>REJECTED</code>, o que sobrescreve o motivo da recusa (ver <a href="#decisoes-pendentes">Decisões pendentes</a>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>POST /clinical-records</code> (iniciar prontuário)</td>
+<td style="text-align: left;">Só para agendamentos <code>SCHEDULED</code> ou <code>IN_PROGRESS</code>. Pendentes e recusados retornam 400.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dashboards da clínica (<code>/dashboard</code>)</td>
+<td style="text-align: left;">Pendências e recusas ficam fora de totais, categorias, tendência e consultas futuras.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GET /portal/dashboard</code> (consultas recentes)</td>
+<td style="text-align: left;">Mostra só <code>SCHEDULED</code>, <code>IN_PROGRESS</code> e <code>COMPLETED</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="decisoes-pendentes">Decisões pendentes</h2>
+<ol>
+<li><strong>Cancelamento da solicitação pelo tutor.</strong> Hoje o tutor não consegue desistir de uma solicitação pendente. A proposta, ainda não implementada, é criar <code>PATCH /portal/appointments/:id/cancel</code>, restrito ao tutor dono do pet e ao status <code>PENDING_APPROVAL</code>.</li>
+<li><strong>Incluir <code>vet</code> em <code>GET /portal/appointments</code></strong>, para o tutor ver o nome do veterinário depois da aprovação.</li>
+<li><strong>Padronizar o <code>dateTime</code> do portal</strong> com o mesmo validador ISO 8601 estrito das rotas da clínica. Hoje o portal aceita qualquer formato que o JavaScript consiga converter em data.</li>
+<li><strong>Bloquear o cancelamento de solicitações <code>REJECTED</code>.</strong> O <code>DELETE /appointments/:id</code> bloqueia <code>COMPLETED</code>, <code>CANCELLED</code> e <code>IN_PROGRESS</code>, mas não bloqueia <code>REJECTED</code>. Cancelar uma solicitação recusada troca o status para <code>CANCELLED</code> e substitui o motivo da recusa pela justificativa do cancelamento. Como <code>REJECTED</code> é um estado final, a proposta é retornar 400 nesse caso.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
