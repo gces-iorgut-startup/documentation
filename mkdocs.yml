@@ -26,6 +26,7 @@ extra_javascript:
 nav:
     - Início: index.md
     - Gestão e Evolução:
+        - Metodologia: metodologia.md
         - Backlog do Produto: backlog.md
         - Atividades da Sprint: atividades_sprint.md
         - Registro de Reuniões: registro_reunioes_sprint.md
