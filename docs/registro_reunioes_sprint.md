@@ -58,7 +58,35 @@ Este documento serve como modelo para relatar a presença, datas e assuntos abor
 
 ---
 
-## Sprint 2 (Modelo)
+## Sprint 2
+### Weekly 1
+- **Data:** 01/10/2026
+- **Assunto:** Alinhamento de Sprints, Divisão de US e Tarefas da Semana
+- **Participantes Presentes:**
+  - Artur Galdino
+  - Taynara Vitorino
+  - João Marcos de Andrade
+  - Manoela Chaves
+  - Victor Hugo Bernardes
+  - Luiza Pugas
+  - Wallyson Souza
+  - Paola do Nascimento
+  - Lara Mota
+  - Magno Vieira
+- **Participantes Ausentes:**
+  - Thales Germano
+  - Pedro Henrique Santos
+- **Resumo/Anotações:** 
+  - Cada subgrupo apresentou o status e alinhou as User Stories (US) que iriam implementar ou continuar desenvolvendo nesta sprint.
+  - Alinhamento sobre o processo de envio e subida de Pull Requests (PRs) para o repositório principal.
+  - Definição da responsabilidade pelo frontend de login do tutor, ficando a cargo de Artur, Wallyson e Pedro (que já estavam atuando nessa frente).
+  - Alinhamento para envio das US por escrito no WhatsApp.
+  - Tarefa atribuída ao Artur: atualizar e adicionar as US na documentação (`docs`).
+  - Alinhamento sobre a geração do APK do aplicativo mobile.
+
+---
+
+## Sprint 3 (Modelo)
 
 ### Weekly 1
 - **Data:** DD/MM/AAAA

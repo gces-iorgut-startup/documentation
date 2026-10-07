@@ -33,6 +33,23 @@ Este documento consolida o andamento tecnico da equipe ao longo do projeto, deta
 ---
 
 # Sprint 02
-
-*Período:* [Data de Início] a [Data de Fim]
-
+ 
+*Período:* 28/09/2026 a 05/10/2026
+ 
+## Entregas da Sprint
+ 
+| Trio de Desenvolvedores | Qtd. de Tarefas | Tarefas (Issues) | Assunto das Tarefas |
+|---|---:|---|---|
+| Taynara, Luiza e João Marcos | 7 | US03[(#24)](https://github.com/gces-iorgut-startup/android-mobile/issues/24), US04[(#25)](https://github.com/gces-iorgut-startup/android-mobile/issues/25), US05[(#26)](https://github.com/gces-iorgut-startup/android-mobile/issues/26), US06[(#27)](https://github.com/gces-iorgut-startup/android-mobile/issues/27), US07[(#28)](https://github.com/gces-iorgut-startup/android-mobile/issues/28), US08[(#29)](https://github.com/gces-iorgut-startup/android-mobile/issues/29), MOB-02[(#31)](https://github.com/gces-iorgut-startup/android-mobile/issues/31) | Desenvolvimento Mobile (Autenticação, Gestão de Pets, Home e Suporte Expo Web) |
+| Manoela, Thales e Victor | 3 | US11[(#42)](https://github.com/gces-iorgut-startup/android-mobile/issues/42), US12[(#43)](https://github.com/gces-iorgut-startup/android-mobile/issues/43), US13[(#44)](https://github.com/gces-iorgut-startup/android-mobile/issues/44) | Desenvolvimento Mobile (Exames, Recomendações Veterinárias e Consultas) |
+| Artur, Wallyson e Pedro | 5 | BE-05[(#11)](https://github.com/gces-iorgut-startup/backend/issues/11), SEC04[(#12)](https://github.com/gces-iorgut-startup/backend/issues/12), BE-05[(#13)](https://github.com/gces-iorgut-startup/backend/issues/13), BE-01[(#14)](https://github.com/gces-iorgut-startup/backend/issues/14), BUG-01[(#1)](https://github.com/gces-iorgut-startup/frontend/issues/1) | Backend (Validação CRMV, Migration Appointments, Esteira de Agendamento) e Correção Frontend (Cadastro de Senha do Tutor) |
+| Paola, Lara e Magno | - | - | - |
+ 
+---
+ 
+## Resumo
+ 
+- *Líder da Apresentação*: Artur Fernandes Galdino
+- *Total de Tarefas:* 15
+- *Início da Sprint:* 28/09/2026
+- *Fim da Sprint:* 05/10/2026
