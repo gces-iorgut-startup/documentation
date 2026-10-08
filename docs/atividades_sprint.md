@@ -62,5 +62,4 @@ Como parte da entrega da **MOB-04 (#48)**, foi disponibilizada a primeira versã
 - **Versão:** `1.0.0`
 - **API em Produção:** `https://backend-tlpu.onrender.com`
 - **Download Direto do APK:** [Baixar v1.apk](https://github.com/gces-iorgut-startup/android-mobile/releases/download/v1.0.0/v1.apk)
-- **Página da Release:** [GitHub Releases — android-mobile v1.0.0](https://github.com/gces-iorgut-startup/android-mobile/releases/tag/v1.0.0)
 
