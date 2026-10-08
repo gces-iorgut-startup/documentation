@@ -54,7 +54,7 @@ Este documento consolida o andamento tecnico da equipe ao longo do projeto, deta
 - *Início da Sprint:* 28/09/2026
 - *Fim da Sprint:* 05/10/2026
 
-### 🚀 Deploy do Aplicativo Mobile (v1)
+### Deploy do Aplicativo Mobile (v1)
 
 Como parte da entrega da **MOB-04 (#48)**, foi disponibilizada a primeira versão standalone do aplicativo para Android:
 
