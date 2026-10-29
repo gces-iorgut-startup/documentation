@@ -86,7 +86,36 @@ Este documento serve como modelo para relatar a presença, datas e assuntos abor
 
 ---
 
-## Sprint 3 (Modelo)
+## Sprint 3
+### Weekly 1
+- **Data:** 15/10/2026
+- **Assunto:** Alinhamento da Sprint 3 e definição das frentes de cada trio
+- **Participantes Presentes:**
+  - Taynara Vitorino
+  - João Marcos de Andrade
+  - Luiza Pugas
+  - Manoela Chaves
+  - Victor Hugo Bernardes
+  - Thales Germano
+  - Artur Galdino
+  - Wallyson Souza
+  - Pedro Henrique Santos
+  - Lara Mota
+  - Magno Vieira
+  - Paola do Nascimento
+- **Participantes Ausentes:**
+  - Nenhum
+- **Resumo/Anotações:** 
+  - Cada trio apresentou o andamento e definiu suas frentes para a sprint.
+  - Taynara, Luiza e João Marcos: após concluírem a Sprint 2, ficaram com os testes das telas do app que já haviam implementado (US01 a US08).
+  - Manoela, Thales e Victor: continuação das US do app (US14 e US15) e testes.
+  - Artur, Wallyson e Pedro: débitos técnicos, criação de contas dos perfis owner e veterinário e validação dos fluxos com veterinários, cujo contato será enviado pelo professor.
+  - Lara, Magno e Paola: frente a definir. Foram enviadas sugestões com base nas tarefas anteriores do trio (conclusão da SEC03, testes E2E do portal do tutor, testes unitários do frontend e lembrete de consulta por e-mail).
+  - Thales ficou responsável por solicitar ao professor o contato dos veterinários.
+
+---
+
+## Sprint 4 (Modelo)
 
 ### Weekly 1
 - **Data:** DD/MM/AAAA
