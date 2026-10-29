@@ -63,3 +63,26 @@ Como parte da entrega da **MOB-04 (#48)**, foi disponibilizada a primeira versã
 - **API em Produção:** `https://backend-tlpu.onrender.com`
 - **Download Direto do APK:** [Baixar v1.apk](https://github.com/gces-iorgut-startup/android-mobile/releases/download/v1.0.0/v1.apk)
 
+---
+
+# Sprint 03
+ 
+*Período:* 12/10/2026 a 26/10/2026
+ 
+## Entregas da Sprint
+ 
+| Trio de Desenvolvedores | Qtd. de Tarefas | Tarefas (Issues) | Assunto das Tarefas |
+|---|---:|---|---|
+| Taynara, Luiza e João Marcos | 8 | TEST-01: US01[(#49)](https://github.com/gces-iorgut-startup/android-mobile/issues/49), US02[(#50)](https://github.com/gces-iorgut-startup/android-mobile/issues/50), US03[(#51)](https://github.com/gces-iorgut-startup/android-mobile/issues/51), US04[(#52)](https://github.com/gces-iorgut-startup/android-mobile/issues/52), US05[(#53)](https://github.com/gces-iorgut-startup/android-mobile/issues/53), US06[(#54)](https://github.com/gces-iorgut-startup/android-mobile/issues/54), US07[(#55)](https://github.com/gces-iorgut-startup/android-mobile/issues/55), US08[(#56)](https://github.com/gces-iorgut-startup/android-mobile/issues/56) | Testes Automatizados do App Mobile (Unitários, de Widget e E2E das US01 a US08) |
+| Manoela, Thales e Victor | 9 | DEV-02: US14[(#57)](https://github.com/gces-iorgut-startup/android-mobile/issues/57) (inclui BE-06[(#18)](https://github.com/gces-iorgut-startup/backend/issues/18) e MOB-03[(#40)](https://github.com/gces-iorgut-startup/android-mobile/issues/40)), US15[(#58)](https://github.com/gces-iorgut-startup/android-mobile/issues/58); TEST-02: US09[(#59)](https://github.com/gces-iorgut-startup/android-mobile/issues/59), US10[(#60)](https://github.com/gces-iorgut-startup/android-mobile/issues/60), US11[(#61)](https://github.com/gces-iorgut-startup/android-mobile/issues/61), US12[(#62)](https://github.com/gces-iorgut-startup/android-mobile/issues/62), US13[(#63)](https://github.com/gces-iorgut-startup/android-mobile/issues/63), US14[(#64)](https://github.com/gces-iorgut-startup/android-mobile/issues/64), US15[(#65)](https://github.com/gces-iorgut-startup/android-mobile/issues/65) | Desenvolvimento Mobile (Detalhes da Consulta com o Veterinário e Agendamento de Consulta) e Testes Automatizados do App (US09 a US15) |
+| Artur, Wallyson e Pedro | 8 | BE-08[(#29)](https://github.com/gces-iorgut-startup/backend/issues/29), BE-09[(#30)](https://github.com/gces-iorgut-startup/backend/issues/30), BE-10[(#31)](https://github.com/gces-iorgut-startup/backend/issues/31), QA-04[(#32)](https://github.com/gces-iorgut-startup/backend/issues/32), FE-06[(#13)](https://github.com/gces-iorgut-startup/frontend/issues/13), FE-07[(#14)](https://github.com/gces-iorgut-startup/frontend/issues/14), FE-08[(#15)](https://github.com/gces-iorgut-startup/frontend/issues/15), QA-05[(#16)](https://github.com/gces-iorgut-startup/frontend/issues/16) | Backend (Sigla Única da Clínica, Validação Pública por Sigla e Autocadastro de Veterinário), Frontend (Cadastro com Alternância Dono/Veterinário, Validação da Sigla em Tempo Real e Sigla da Clínica no Perfil do Dono) e Testes Automatizados |
+| Lara, Magno e Paola | 6 | QA-01[(#11)](https://github.com/gces-iorgut-startup/frontend/issues/11), QA-02[(#12)](https://github.com/gces-iorgut-startup/frontend/issues/12), QA-03[(#19)](https://github.com/gces-iorgut-startup/frontend/issues/19), QA-04[(#18)](https://github.com/gces-iorgut-startup/frontend/issues/18), SEC-03[(#4)](https://github.com/gces-iorgut-startup/backend/issues/4), BE-04[(#28)](https://github.com/gces-iorgut-startup/backend/issues/28) | Testes do Frontend (Autenticação, Zustand, Máscaras e Formulários), Testes Unitários na CI, Testes E2E do Primeiro Acesso do Tutor, Segurança (Sessão Web com Cookies HttpOnly e CSRF) e Backend (Lembrete de Consulta por E-mail 24h Antes) |
+ 
+---
+ 
+## Resumo
+ 
+- *Líder da Apresentação*: Thales Germano
+- *Total de Tarefas:* 31
+- *Início da Sprint:* 12/10/2026
+- *Fim da Sprint:* 26/10/2026
