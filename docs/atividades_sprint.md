@@ -86,3 +86,12 @@ Como parte da entrega da **MOB-04 (#48)**, foi disponibilizada a primeira versã
 - *Total de Tarefas:* 31
 - *Início da Sprint:* 12/10/2026
 - *Fim da Sprint:* 26/10/2026
+
+### Deploy do Aplicativo Mobile (v2)
+
+Como parte das entregas da **Sprint 03** (com inclusão do fluxo de agendamento de consultas, visualização do veterinário responsável e suíte completa de testes automatizados), foi disponibilizada a segunda versão standalone do aplicativo para Android:
+
+- **Artefato:** `v2.apk` (*Iougurt Tutor*)
+- **Versão:** `2.0.0`
+- **API em Produção:** `https://backend-tlpu.onrender.com`
+- **Download Direto do APK:** [Baixar v2.apk](https://github.com/gces-iorgut-startup/android-mobile/releases/download/v2.0.0/v2.apk)
