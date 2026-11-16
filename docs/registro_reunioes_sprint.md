@@ -115,7 +115,121 @@ Este documento serve como modelo para relatar a presença, datas e assuntos abor
 
 ---
 
-## Sprint 4 (Modelo)
+## Sprint 4
+
+### Reunião Extra / Alinhamento: Validação com o veterinário
+- **Data:** 30/10/2026
+- **Assunto:** Reunião com o veterinário Rubens para validar o produto e elicitar novos requisitos e evoluções para o projeto.
+- **Participantes Presentes:**
+  - Artur Galdino
+  - João Marcos de Andrade
+  - Lara Mota
+  - Manoela Garcia
+  - Paola do Nascimento
+  - Victor Hugo Bernardes
+- **Participantes Ausentes:**
+  - Taynara Vitorino
+  - Luiza Pugas
+  - Thales Germano
+  - Wallyson Souza
+  - Pedro Henrique Santos
+  - Magno Vieira
+- **Resumo/Anotações:**
+  - O produto foi apresentado ao veterinário Rubens para validação dos fluxos existentes e levantamento de necessidades observadas na rotina clínica. Os feedbacks foram organizados em quatro frentes: estabilização do aplicativo mobile, estabilização e implantação da aplicação web, melhorias de cadastros e navegação e evolução do prontuário clínico.
+  - Entre os requisitos levantados estavam novos dados no cadastro dos pacientes, contatos alternativos para tutores, pesquisa avançada, tipos e edição de atendimentos, atividades recentes no dashboard, observações clínicas, patologias crônicas, categorização de exames, evolução de peso, acompanhamento fotográfico e melhorias no controle de vacinação.
+  - Também foram discutidas evoluções de maior porte, como orçamentos, modelos de documentos e receitas, permissões por perfil, internações e alertas automáticos de vacinação. As demandas foram posteriormente classificadas por prioridade e distribuídas entre os trios.
+
+### Weekly 1
+- **Data:** 03/11/2026
+- **Assunto:** Planejamento da Sprint 4 a partir dos feedbacks da reunião com o veterinário e verificação do início das atividades.
+- **Participantes Presentes:**
+  - Taynara Vitorino
+  - João Marcos de Andrade
+  - Luiza Pugas
+  - Manoela Garcia
+  - Victor Hugo Bernardes
+  - Thales Germano
+  - Artur Galdino
+  - Wallyson Souza
+  - Pedro Henrique Santos
+  - Lara Mota
+  - Magno Vieira
+  - Paola do Nascimento
+- **Participantes Ausentes:**
+  - Nenhum
+- **Resumo/Anotações:**
+  - A equipe revisou o planejamento elaborado após a reunião com o veterinário, discutiu a divisão das frentes e alinhou a execução das demandas da sprint.
+  - Cada trio informou que já havia iniciado a decomposição das funcionalidades em tarefas, dividido as responsabilidades entre seus integrantes e começado o trabalho conforme o planejamento acordado.
+
+### Reunião Extra / Alinhamento: Distribuição do aplicativo mobile
+- **Data:** 07/11/2026
+- **Assunto:** Reunião com o professor para decidir a estratégia relacionada à App Store e à Play Store.
+- **Participantes Presentes:**
+  - Taynara Vitorino
+  - Luiza Pugas
+  - João Marcos de Andrade
+- **Participantes Ausentes:**
+  - Manoela Garcia
+  - Victor Hugo Bernardes
+  - Thales Germano
+  - Artur Galdino
+  - Wallyson Souza
+  - Pedro Henrique Santos
+  - Lara Mota
+  - Magno Vieira
+  - Paola do Nascimento
+- **Resumo/Anotações:**
+  - Foram discutidos os requisitos e as limitações para publicação do aplicativo nas lojas oficiais. Ficou definido que a distribuição do artefato de release será realizada por meio de APK para Android, sem publicação na Play Store ou na App Store. A execução no iOS será tratada separadamente, conforme as possibilidades do ambiente de desenvolvimento.
+
+### Weekly 2
+- **Data:** 10/11/2026
+- **Assunto:** Acompanhamento do andamento das issues de cada trio.
+- **Participantes Presentes:**
+  - Manoela Garcia
+  - Victor Hugo Bernardes
+  - Paola do Nascimento
+  - João Marcos de Andrade
+  - Artur Galdino
+  - Luiza Pugas
+- **Participantes Ausentes:**
+  - Taynara Vitorino
+  - Thales Germano
+  - Wallyson Souza
+  - Pedro Henrique Santos
+  - Lara Mota
+  - Magno Vieira
+- **Resumo/Anotações:**
+  - Cada trio apresentou o andamento de suas issues e os próximos passos planejados para a sprint.
+  - O Trio 1 estava atuando nas demandas mobile, com correções de bugs, testes, validação das integrações, alinhamento sobre a distribuição do aplicativo e verificação da paridade entre o portal web do tutor e o app.
+  - O Trio 2 havia dividido as tarefas e iniciado as atividades de estabilização da aplicação web.
+  - O Trio 3 estava implementando as demandas de cadastro e navegação da aplicação web, com previsão de avançar posteriormente para as evoluções adicionais.
+  - O Trio 4 estava trabalhando nas evoluções do prontuário web e, em seguida, avançaria para as demandas EVO.
+
+### Reunião Extra / Alinhamento: Validação final do produto
+- **Data:** 14/11/2026
+- **Assunto:** Validação de todo o produto com o professor atuando como cliente.
+- **Participantes Presentes:**
+  - Victor Hugo Bernardes
+  - Manoela Garcia
+  - Luiza Pugas
+  - Artur Galdino
+  - João Marcos de Andrade
+  - Lara Mota
+- **Participantes Ausentes:**
+  - Taynara Vitorino
+  - Thales Germano
+  - Wallyson Souza
+  - Pedro Henrique Santos
+  - Magno Vieira
+  - Paola do Nascimento
+- **Resumo/Anotações:**
+  - A equipe apresentou inicialmente o aplicativo mobile e, em seguida, demonstrou a aplicação web pelo fluxo do profissional veterinário.
+  - Durante a navegação, foram explicados os fluxos do produto, as funcionalidades já existentes e as evoluções implementadas na Sprint 4.
+  - Ao final da demonstração, o professor, atuando como cliente, aprovou e validou o produto apresentado.
+
+---
+
+## Sprint 5 (Modelo)
 
 ### Weekly 1
 - **Data:** DD/MM/AAAA
@@ -124,7 +238,7 @@ Este documento serve como modelo para relatar a presença, datas e assuntos abor
   - [ ] [Nomes dos Integrantes Presentes]
 - **Participantes Ausentes:**
   - [Nomes dos Integrantes Ausentes]
-- **Resumo/Anotações:** 
+- **Resumo/Anotações:**
   - [Anotações principais da reunião]
 
 ### Weekly 2
@@ -134,7 +248,7 @@ Este documento serve como modelo para relatar a presença, datas e assuntos abor
   - [ ] [Nomes dos Integrantes Presentes]
 - **Participantes Ausentes:**
   - [Nomes dos Integrantes Ausentes]
-- **Resumo/Anotações:** 
+- **Resumo/Anotações:**
   - [Anotações principais da reunião]
 
 ### Reunião Extra / Alinhamento: [Tópico da Reunião]
@@ -144,5 +258,5 @@ Este documento serve como modelo para relatar a presença, datas e assuntos abor
   - [ ] [Nomes dos Integrantes Presentes]
 - **Participantes Ausentes:**
   - [Nomes dos Integrantes Ausentes]
-- **Resumo/Anotações:** 
+- **Resumo/Anotações:**
   - [Anotações principais da reunião]
