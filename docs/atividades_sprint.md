@@ -95,3 +95,24 @@ Como parte das entregas da **Sprint 03** (com inclusão do fluxo de agendamento 
 - **Versão:** `2.0.0`
 - **API em Produção:** `https://backend-tlpu.onrender.com`
 - **Download Direto do APK:** [Baixar v2.apk](https://github.com/gces-iorgut-startup/android-mobile/releases/download/v2.0.0/v2.apk)
+
+---
+
+# Sprint 04
+ 
+*Período:* 02/11/2026 a 16/11/2026
+ 
+## Entregas da Sprint
+ 
+| Trio de Desenvolvedores | Qtd. de Tarefas | Tarefas (Issues) | Assunto das Tarefas |
+|---|---:|---|---|
+| Taynara, Luiza e João Marcos | 10 | MOB-01[(#71)](https://github.com/gces-iorgut-startup/android-mobile/issues/71), MOB-02[(#72)](https://github.com/gces-iorgut-startup/android-mobile/issues/72), MOB-03[(#73)](https://github.com/gces-iorgut-startup/android-mobile/issues/73), MOB-04[(#74)](https://github.com/gces-iorgut-startup/android-mobile/issues/74), MOB-05[(#75)](https://github.com/gces-iorgut-startup/android-mobile/issues/75), MOB-06[(#78)](https://github.com/gces-iorgut-startup/android-mobile/issues/78), MOB-07[(#79)](https://github.com/gces-iorgut-startup/android-mobile/issues/79), MOB-08[(#83)](https://github.com/gces-iorgut-startup/android-mobile/issues/83), MOB-09[(#85)](https://github.com/gces-iorgut-startup/android-mobile/issues/85), BUG-04[(#87)](https://github.com/gces-iorgut-startup/android-mobile/issues/87) | Qualidade e Release do App Mobile (Testes Funcionais, Correção de Bugs, Validação da Integração com a API, Build de Release e Testes de Regressão), Paridade com o Portal Web (Busca e Filtro no Histórico, Compartilhamento do Atendimento, Tipos de Consulta e Avisos de Vacina), Execução no iPhone pelo Xcode e Correção da Navegação do Login |
+ 
+---
+ 
+## Resumo
+ 
+- *Líder da Apresentação*: [a definir]
+- *Total de Tarefas:* [a preencher com as tarefas de todos os trios]
+- *Início da Sprint:* 02/11/2026
+- *Fim da Sprint:* 16/11/2026
