@@ -28,6 +28,7 @@ nav:
     - Gestão e Evolução:
         - Backlog do Produto: backlog.md
         - Atividades da Sprint: atividades_sprint.md
+        - Contribuições dos Trios: contribuicoes_trios.md
         - Registro de Reuniões: registro_reunioes_sprint.md
         - Protótipo Mobile: prototipo.md
     - Contratos de API:
